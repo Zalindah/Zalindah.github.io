@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Zalindah - Sharing Happiness!">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#f1f1ff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="keywords" content="Zalindah, blog, kripto, cryptocurrency, investasi, risiko investasi, panduan sebelum investasi">
+    <meta name="robot" content="index,follow">
+    <meta name="copyright" content="Copyright © 2021 Zalindah Official">
+    <meta name="author" content="Zalindah">
+    <!-- Verification Dailymotion-->
+    <meta name="dailymotion-domain-verification" content="dm3eh33fh4b8qf0i1">
+    <!-- Verification Google Search-->
+    <meta name="google-site-verification" content="NWb82GpK2oAazShD3pxbOV0lcpE2siMty6fQKY-07UA">
+    <!-- Verification Bing Search-->
+    <meta name="msvalidate.01" content="EBD349B65387CC2F2A650E25D973BF54">
+    <!-- Verification Yandex Search-->
+    <meta name="yandex-verification" content="35262bc5024bf1c5">
+    <!-- Title -->
+    <title>Zalindah - Sharing Happiness!</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/icons/icon-96x96.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/icons/icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-180x180.png">
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/tiny-slider.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/rangeslider.css">
+    <link rel="stylesheet" href="css/vanilla-dataTables.min.css">
+    <link rel="stylesheet" href="css/apexcharts.css">
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="spinner-grow text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+    </div>
+    <!-- Internet Connection Status -->
+    <!-- # This code for showing internet connection status -->
+    <div class="internet-connection-status" id="internetStatus"></div>
+    <!-- Static Backdrop Modal -->
+    <div class="cs-newsletter-form modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="btn btn-close p-1 ms-auto" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h6 class="mb-3">Subscribe our newsletter.</h6>
+            <!-- Subscribe Form-->
+            <div class="card">
+              <div class="card-body">
+                <div class="alert custom-alert-3 alert-success alert-dismissible fade show d-none my-alert" role="alert"><i class="bi bi-check-circle"></i>
+                  <div class="alert-text">
+                    <h6>Successfully sent!</h6><span>Your email successfully sent!</span><a class="btn btn-sm btn-primary mt-2" href="https://telegram.me/Zalindah_Community" target="_blank">Follow up</a>
+                  </div>
+                  <button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="alert" onclick="window.location.href=window.location.href;"></button>
+                </div>
+                <form name="zalindah-contact-form" onsubmit="validasi()"> 
+                  <div class="mb-3">
+                    <label class="form-label" for="email">Your Email</label>
+                    <input class="form-control" id="email" type="email" aria-describedby="email" name="email" placeholder="Enter your email" required="">
+                  </div>
+                  <button class="btn btn-primary w-100 btn-kirim" type="submit">Send</button>
+                  <button class="btn btn-primary w-100 btn-loading d-none" type="button" disabled=""><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>                      Loading...</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Content Wrapper -->
+    <div class="coming-soon-wrapper bg-white text-center bg-overlay" style="background-image: url('img/bg-img/26.jpg')">
+      <div class="container">
+        <div class="cs-logo"><a href="javascript:history.go(-1)"><img src="img/core-img/logo-dark.png" alt=""></a></div>
+        <h2 class="text-white display-3">Coming Soon</h2>
+        <p class="text-white">Fitur keren ini masih dalam penyempurnaan, bersabarlah.</p>
+        <div class="countdown2 justify-content-center" id="countdown2" data-date="05-05-2022" data-time="00:00">
+          <div class="day"><span class="num"></span><span class="word"></span></div>
+          <div class="hour"><span class="num"></span><span class="word"></span></div>
+          <div class="min"><span class="num"></span><span class="word"></span></div>
+          <div class="sec"><span class="num"></span><span class="word"></span></div>
+        </div>
+        <div class="notify-email mt-5">
+          <button class="btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Notify via Email</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/form.js"></script>
+    <!-- All JavaScript Files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slideToggle.min.js"></script>
+    <script src="js/internet-status.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/rangeslider.min.js"></script>
+    <script src="js/vanilla-dataTables.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/magic-grid.min.js"></script>
+    <script src="js/dark-rtl.js"></script>
+    <script src="js/active.js"></script>
+    <!-- PWA -->
+    <script src="js/pwa.js"></script>
+  </body>
+</html>
